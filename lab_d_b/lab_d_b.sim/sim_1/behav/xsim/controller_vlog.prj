@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_d_b.srcs/sources_1/imports/bargraphtest code basys/clock.v" \
+"../../../../lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" \
+"../../../../lab_d_b.srcs/sources_1/imports/Provided code/debouncer.v" \
+"../../../../lab_d_b.srcs/sources_1/imports/Provided code/sevenseg.v" \
+"../../../../lab_d_b.srcs/sources_1/new/controller.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

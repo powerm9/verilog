@@ -1,0 +1,41 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot controller_behav xil_defaultlib.controller xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3129] assignment to input 'anode_sel' [F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/new/controller.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/bargraphtest code basys/clock.v" Line 5. Module clock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/debouncer.v" Line 1. Module debouncer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/sevenseg.v" Line 1. Module seven_segment_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/bargraphtest code basys/clock.v" Line 5. Module clock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/d_type_ff.v" Line 2. Module d_ff_reset doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/debouncer.v" Line 1. Module debouncer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/vivado_projects/lab_d_b/lab_d_b.srcs/sources_1/imports/Provided code/sevenseg.v" Line 1. Module seven_segment_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock
+Compiling module xil_defaultlib.d_ff_reset
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.seven_segment_controller
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot controller_behav
