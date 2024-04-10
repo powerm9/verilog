@@ -4,8 +4,8 @@ Oct 13 2023
 20:47:58
 F:/vivado_projects/lab_f/lab_f.sim/sim_1/behav/xsim/glbl.v,1711128012,verilog,,,,glbl,,,,,,,,
 ,,,,,,,,,,,,,,
-F:/vivado_projects/lab_f/lab_f.srcs/sim_1/new/dff_tb.v,1711137423,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sim_1/new/clock_tb.v,,dff_tb,,,,,,,,
-F:/vivado_projects/lab_f/lab_f.srcs/sources_1/imports/Provided code/d_type_ff.v,1711135427,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sources_1/new/clock.v,,d_ff_reset,,,,,,,,
+F:/vivado_projects/lab_f/lab_f.srcs/sim_1/new/dff_tb.v,1711294144,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sim_1/new/clock_tb.v,,dff_tb,,,,,,,,
+F:/vivado_projects/lab_f/lab_f.srcs/sources_1/imports/Provided code/d_type_ff.v,1711294786,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sources_1/new/clock.v,,d_ff_reset,,,,,,,,
 F:/vivado_projects/lab_f/lab_f.srcs/sources_1/imports/Provided code/debouncer.v,1711128012,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sources_1/imports/Provided code/sevenseg.v,,debouncer,,,,,,,,
 F:/vivado_projects/lab_f/lab_f.srcs/sources_1/imports/Provided code/sevenseg.v,1711128012,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sources_1/new/clock.v,,seven_segment_controller,,,,,,,,
 F:/vivado_projects/lab_f/lab_f.srcs/sources_1/new/clock.v,1711135307,verilog,,F:/vivado_projects/lab_f/lab_f.srcs/sim_1/new/dff_tb.v,,clock,,,,,,,,

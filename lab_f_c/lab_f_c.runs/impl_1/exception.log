@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file F:\vivado_projects\lab_f_c\lab_f_c.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

@@ -29,22 +29,16 @@ module controller(
   seven_segment_controller SS0(.clk(clk), .reset(reset), .temp(Q), .anode_select(anode_sel), .LED_out(led_out));
   
 
- always @(posedge clk)
- begin
-    
-    if(buttons[0] | buttons[3]) begin
-        Q_next = Q;
+always @* begin
+    if (buttons[0] | buttons[3])
         Q_next = Q + 1'b1;
-    end    
-    if(buttons[2] | buttons[1]) begin
-        Q_next = Q;
-        Q_next = Q_next - 1'b1;
-    end
-    if (buttons[4]) begin
+    else if (buttons[2] | buttons[1])
+        Q_next = Q - 1'b1;
+    else if (buttons[4])
         Q_next = 8'd22;
-    end
-    if (reset) begin
-       Q_next = 8'd0;
-    end
+    else if (reset)
+        Q_next = 8'd0;
+    else
+        Q_next = Q;
 end
 endmodule

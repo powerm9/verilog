@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Mar 24 20:14:07 2024
+# Process ID: 15848
+# Current directory: F:/vivado_projects/lab_f_c/lab_f_c.runs/impl_1
+# Command line: vivado.exe -log lfsr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lfsr.tcl -notrace
+# Log file: F:/vivado_projects/lab_f_c/lab_f_c.runs/impl_1/lfsr.vdi
+# Journal file: F:/vivado_projects/lab_f_c/lab_f_c.runs/impl_1\vivado.jou
+# Running On: Pogputer, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 12, Host memory: 17101 MB
+#-----------------------------------------------------------
+source lfsr.tcl -notrace

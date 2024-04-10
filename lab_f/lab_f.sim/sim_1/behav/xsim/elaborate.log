@@ -5,5 +5,11 @@ Running: F:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'clock' is not permitted [F:/vivado_projects/lab_f/lab_f.srcs/sim_1/new/dff_tb.v:15]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.d_ff_reset
+Compiling module xil_defaultlib.dff_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dff_tb_behav

@@ -178,3 +178,8 @@
     <Process Command="vivado.bat" Owner="mattp" Host="POGPUTER" Pid="9896" HostCore="12" HostMemory="017101348864">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mattp" Host="POGPUTER" Pid="1116" HostCore="12" HostMemory="017101348864">
+    </Process>
+</ProcessHandle>
