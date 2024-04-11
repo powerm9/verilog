@@ -6,5 +6,5 @@ F:/vivado_projects/assign_2/assign_2.sim/sim_1/behav/xsim/glbl.v,1697210495,veri
 F:/vivado_projects/assign_2/assign_2.srcs/sim_1/new/sequencer_tb.v,1712799352,verilog,,,,sequencer_tb,,,,,,,,
 F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/clock.v,1711135307,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,,clock,,,,,,,,
 F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,1712790547,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/sequencer.v,,lfsr,,,,,,,,
-F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,1712798621,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,,fsm,,,,,,,,
+F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,1712800319,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,,fsm,,,,,,,,
 F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/sequencer.v,1712793394,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sim_1/new/sequencer_tb.v,,sequencer,,,,,,,,
