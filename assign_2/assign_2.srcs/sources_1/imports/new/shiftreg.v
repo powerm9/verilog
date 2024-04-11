@@ -1,12 +1,11 @@
 `timescale 1ns / 1ps
 
-module lfsr
-    #(parameter seed = 21'h164057) //seed value calculation shown in report // 2^ 15 - 1 = 32767
+ module lfsr
+    #(parameter seed = 21'h164057) //seed value calculation shown in report // 
     (
     input clk, sh_en, rst_n, //define clock enable and reset inputs
     output [20:0] Q_out,     //define Q output
-    output reg max_tick_reg,  //define value for measuring when lfsr has ran whole way through
-    output reg [20:0] msb_one, msb_zer
+    output reg max_tick_reg  //define value for measuring when lfsr has ran whole way through
     ); 
     
     reg  [20:0] Q_state; //state reg for holding value 
@@ -15,9 +14,9 @@ module lfsr
     reg  [20:0] count_r;  //state reg for counter for max tick register
     wire [20:0] count;  //count output
     wire [20:0] count_n; //next counter number holder
-    clock m0(.CCLK(clk), .clkscale(50000000), .clk(clock));
+    //clock m0(.CCLK(clk), .clkscale(50000000), .clk(clock));
     
-    always @ (posedge clock) begin //do these instructions at rising edge of clock
+    always @ (posedge clk) begin //do these instructions at rising edge of clock
         if (!rst_n) begin        //if reset is not right value
             Q_state <= seed;     //initialize lfsr with seed value
             count_r <= 0;       //counter reg set to 0

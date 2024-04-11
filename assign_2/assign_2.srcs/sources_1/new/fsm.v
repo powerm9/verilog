@@ -2,8 +2,8 @@
 
 module fsm(input clk, rst, b, output x);
     
-reg [1:0] s;
-reg [1:0] ns;
+reg [10:0] s;
+reg [10:0] ns;
 
 parameter A = 11'b1, B = 11'b11, C = 11'b110, D = 11'b1101, E = 11'b11011, F = 11'b110111,
           G = 11'b1101111, H = 11'b11011111,  I = 11'b110111110, J = 11'b1101111101, K = 11'b11011111010;
