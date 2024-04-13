@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="174,618.793 ns"></ZoomStartTime>
-      <ZoomEndTime time="174,686.594 ns"></ZoomEndTime>
-      <Cursor1Time time="174,655.193 ns"></Cursor1Time>
+      <ZoomStartTime time="6,112,116.020 ns"></ZoomStartTime>
+      <ZoomEndTime time="6,112,161.121 ns"></ZoomEndTime>
+      <Cursor1Time time="6,112,152.320 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="124"></NameColumnWidth>
-      <ValueColumnWidth column_width="229"></ValueColumnWidth>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <ValueColumnWidth column_width="222"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
+   <WVObjectSize size="7" />
    <wvobject fp_name="/sequencer_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -29,16 +29,26 @@
       <obj_property name="ObjectShortName">Q_out[20:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/sequencer_tb/b" type="logic">
-      <obj_property name="ElementShortName">b</obj_property>
-      <obj_property name="ObjectShortName">b</obj_property>
-   </wvobject>
    <wvobject fp_name="/sequencer_tb/count" type="array">
       <obj_property name="ElementShortName">count[20:0]</obj_property>
       <obj_property name="ObjectShortName">count[20:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/sequencer_tb/x" type="logic">
       <obj_property name="ElementShortName">x</obj_property>
       <obj_property name="ObjectShortName">x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequencer_tb/max_tick_reg" type="logic">
+      <obj_property name="ElementShortName">max_tick_reg</obj_property>
+      <obj_property name="ObjectShortName">max_tick_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequencer_tb/validate" type="array">
+      <obj_property name="ElementShortName">validate[20:0]</obj_property>
+      <obj_property name="ObjectShortName">validate[20:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequencer_tb/Q_out_prev" type="array">
+      <obj_property name="ElementShortName">Q_out_prev[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Q_out_prev[20:0]</obj_property>
    </wvobject>
 </wave_config>

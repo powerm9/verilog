@@ -1,5 +1,13 @@
-+====================+===================+==================+
-| Launch Setup Clock | Launch Hold Clock | Pin              |
-+====================+===================+==================+
-| clk                | clk               | clock1/clk_reg/D |
-+--------------------+-------------------+------------------+
++====================+===================+===============================+
+| Launch Setup Clock | Launch Hold Clock | Pin                           |
++====================+===================+===============================+
+| clk                | clk               | clock1/clk_reg/D              |
+| clk                | clk               | SS0/refresh_counter_reg[19]/D |
+| clk                | clk               | SS0/refresh_counter_reg[16]/D |
+| clk                | clk               | SS0/refresh_counter_reg[15]/D |
+| clk                | clk               | SS0/refresh_counter_reg[12]/D |
+| clk                | clk               | SS0/refresh_counter_reg[11]/D |
+| clk                | clk               | SS0/refresh_counter_reg[8]/D  |
+| clk                | clk               | SS0/refresh_counter_reg[7]/D  |
+| clk                | clk               | SS0/refresh_counter_reg[4]/D  |
++--------------------+-------------------+-------------------------------+

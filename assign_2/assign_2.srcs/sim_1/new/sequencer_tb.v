@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module sequencer_tb;
 
 // Parameters
@@ -15,6 +13,9 @@ wire [20:0] Q_out;
 wire [20:0] count;
 wire b;
 wire max_tick_reg;
+
+// Output signal
+reg [20:0] validate, Q_out_prev;
 
 // Instantiate the sequencer module
 sequencer uut (
@@ -32,12 +33,22 @@ sequencer uut (
 initial clk = 0; //start clock at 0
 always #((CLK_PERIOD / 2)) clk = ~clk;
 
-assign b = Q_out[0];
+always @(posedge clk) begin
+    Q_out_prev <= Q_out[10:0];
+end
 
+// Check condition for outputting a high value
+always @(posedge clk) begin
+    if (x && (Q_out_prev == 11'b11011111010)) begin
+        validate = validate +1'b1;
+    end          
+end
+        
 
 // Initial stimulus
 initial begin
     // Initialize inputs
+    validate = 0;
     rst_fsm = 0;
     sh_en = 0;
     rst_lfsr = 1;
@@ -58,7 +69,7 @@ initial begin
     rst_lfsr = 1;
     #200;
     sh_en = 1;
-    #100000;
+    #21000000;
     sh_en = 0;
     #100
     // End simulation

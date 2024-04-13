@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sat Apr 13 20:20:05 2024
+| Date         : Sun Apr 14 00:30:56 2024
 | Host         : DESKTOP-N5DBKQV running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file sequencer_control_sets_placed.rpt
 | Design       : sequencer
@@ -60,10 +60,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
 | No           | No                    | Yes                    |              20 |            5 |
-| No           | Yes                   | No                     |              43 |           12 |
+| No           | Yes                   | No                     |              43 |           16 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              48 |           10 |
+| Yes          | Yes                   | No                     |              48 |           13 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,11 +74,11 @@ Table of Contents
 |       Clock Signal       | Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------------+---------------+---------------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG           |               |                           |                1 |              1 |         1.00 |
-|  Q_state_reg[20]_i_2_n_0 |               | rst_fsm_IBUF              |                6 |             11 |         1.83 |
+|  Q_state_reg[20]_i_2_n_0 |               | rst_fsm_IBUF              |                5 |             11 |         2.20 |
 |  Q_state_reg[20]_i_2_n_0 | fsm1/x_OBUF   | count[0]_i_1_n_0          |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG           |               | rst_fsm_IBUF              |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG           |               | clock1/clear              |                6 |             32 |         5.33 |
-|  Q_state_reg[20]_i_2_n_0 | sh_en_IBUF    | lfsr1/Q_state[20]_i_1_n_0 |                6 |             32 |         5.33 |
+|  Q_state_reg[20]_i_2_n_0 | sh_en_IBUF    | lfsr1/Q_state[20]_i_1_n_0 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG           |               | clock1/clear              |               11 |             32 |         2.91 |
 +--------------------------+---------------+---------------------------+------------------+----------------+--------------+
 
 

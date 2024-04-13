@@ -11,7 +11,7 @@ module sequencer(
 );
 
 reg [15:0] count;
-clock clock1(.CCLK(clk), .clkscale(100000), .clk(clock));
+clock clock1(.CCLK(clk), .clkscale(1000), .clk(clock));
 lfsr lfsr1(.clk(clock), .sh_en(sh_en), .rst_n(rst_lfsr), .Q_out(led));
 fsm fsm1(.clk(clock), .rst(rst_fsm), .b(led[0]), .x(x));
 seven_segment_controller SS0(.clk(clk), .reset(rst_fsm), .count(count), .anode_select(anode_sel), .LED_out(led_out));

@@ -49,7 +49,7 @@ always @ (*)
         J : if(b) ns = E;   //1101111101
             else  ns = K;     
             
-        K : if(b) ns = B;   //11011111010 
+        K : if(b) ns = A;   //11011111010 
             else  ns = rst;      
             
          default: ns = rst;       
