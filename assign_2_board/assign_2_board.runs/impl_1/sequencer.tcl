@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "F:/vivado_projects/assign_2_board/assign_2_board.runs/impl_1/sequencer.tcl"
+  variable script "C:/vivado_projects/assign_2_board/assign_2_board.runs/impl_1/sequencer.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -123,26 +122,26 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 12  }
+  set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
-  set_property board_part_repo_paths {C:/Users/mattp/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
+  set_property board_part_repo_paths {C:/Users/lenov/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir F:/vivado_projects/assign_2_board/assign_2_board.cache/wt [current_project]
-  set_property parent.project_path F:/vivado_projects/assign_2_board/assign_2_board.xpr [current_project]
-  set_property ip_output_repo F:/vivado_projects/assign_2_board/assign_2_board.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/vivado_projects/assign_2_board/assign_2_board.cache/wt [current_project]
+  set_property parent.project_path C:/vivado_projects/assign_2_board/assign_2_board.xpr [current_project]
+  set_property ip_output_repo C:/vivado_projects/assign_2_board/assign_2_board.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet F:/vivado_projects/assign_2_board/assign_2_board.runs/synth_1/sequencer.dcp
+  add_files -quiet C:/vivado_projects/assign_2_board/assign_2_board.runs/synth_1/sequencer.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{F:/vivado_projects/assign_2_board/assign_2_board.srcs/constrs_1/imports/Provided code/practicaldff.xdc}}
+  read_xdc {{C:/vivado_projects/assign_2_board/assign_2_board.srcs/constrs_1/imports/Provided code/practicaldff.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -2,9 +2,9 @@
 2020.2
 Oct 13 2023
 20:47:58
-F:/vivado_projects/assign_2/assign_2.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-F:/vivado_projects/assign_2/assign_2.srcs/sim_1/new/sequencer_tb.v,1712799352,verilog,,,,sequencer_tb,,,,,,,,
-F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/clock.v,1711135307,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,,clock,,,,,,,,
-F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,1712790547,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/sequencer.v,,lfsr,,,,,,,,
-F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,1712800319,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,,fsm,,,,,,,,
-F:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/sequencer.v,1712793394,verilog,,F:/vivado_projects/assign_2/assign_2.srcs/sim_1/new/sequencer_tb.v,,sequencer,,,,,,,,
+C:/vivado_projects/assign_2/assign_2.sim/sim_1/behav/xsim/glbl.v,1712918111,verilog,,,,glbl,,,,,,,,
+C:/vivado_projects/assign_2/assign_2.srcs/sim_1/new/sequencer_tb.v,1713036014,verilog,,,,sequencer_tb,,,,,,,,
+C:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/clock.v,1712918111,verilog,,C:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,,clock,,,,,,,,
+C:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,1712918111,verilog,,C:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/sequencer.v,,lfsr,,,,,,,,
+C:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/fsm.v,1713034280,verilog,,C:/vivado_projects/assign_2/assign_2.srcs/sources_1/imports/new/shiftreg.v,,fsm,,,,,,,,
+C:/vivado_projects/assign_2/assign_2.srcs/sources_1/new/sequencer.v,1713036086,verilog,,C:/vivado_projects/assign_2/assign_2.srcs/sim_1/new/sequencer_tb.v,,sequencer,,,,,,,,

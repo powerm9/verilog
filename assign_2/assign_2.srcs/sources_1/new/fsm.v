@@ -40,7 +40,7 @@ always @ (*)
         G : if(b) ns = H;   //1101111  110 -> 110
             else  ns = C;
             
-        H : if(b) ns = rst; //11011111 
+        H : if(b) ns = B; //11011111 
             else  ns = I;
             
         I : if(b) ns = J;   //110111110 

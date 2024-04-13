@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1712816132" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sequencer.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1713035789" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sequencer.dcp">
   <File Type="PA-TCL" Name="sequencer.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="sequencer_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="sequencer_reports.tcl"/>
@@ -31,7 +31,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Provided code/sevenseg.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/mattp/Downloads/Provided code/sevenseg.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Users/mattp/Downloads/Provided code/sevenseg.v"/>
         <Attr Name="ImportTime" Val="1605659828"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

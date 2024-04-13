@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/vivado_projects/assign_2_board/assign_2_board.runs/synth_1/sequencer.tcl"
+  variable script "C:/vivado_projects/assign_2_board/assign_2_board.runs/synth_1/sequencer.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,31 +70,30 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
+set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir F:/vivado_projects/assign_2_board/assign_2_board.cache/wt [current_project]
-set_property parent.project_path F:/vivado_projects/assign_2_board/assign_2_board.xpr [current_project]
+set_property webtalk.parent_dir C:/vivado_projects/assign_2_board/assign_2_board.cache/wt [current_project]
+set_property parent.project_path C:/vivado_projects/assign_2_board/assign_2_board.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/mattp/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/lenov/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo f:/vivado_projects/assign_2_board/assign_2_board.cache/ip [current_project]
+set_property ip_output_repo c:/vivado_projects/assign_2_board/assign_2_board.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  F:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/imports/new/clock.v
-  F:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/new/fsm.v
-  {F:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/Provided code/sevenseg.v}
-  F:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/imports/new/shiftreg.v
-  F:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/new/sequencer.v
+  C:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/imports/new/clock.v
+  C:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/new/fsm.v
+  {C:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/Provided code/sevenseg.v}
+  C:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/imports/new/shiftreg.v
+  C:/vivado_projects/assign_2_board/assign_2_board.srcs/sources_1/imports/sources_1/new/sequencer.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -105,12 +104,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{F:/vivado_projects/assign_2_board/assign_2_board.srcs/constrs_1/imports/Provided code/practicaldff.xdc}}
-set_property used_in_implementation false [get_files {{F:/vivado_projects/assign_2_board/assign_2_board.srcs/constrs_1/imports/Provided code/practicaldff.xdc}}]
+read_xdc {{C:/vivado_projects/assign_2_board/assign_2_board.srcs/constrs_1/imports/Provided code/practicaldff.xdc}}
+set_property used_in_implementation false [get_files {{C:/vivado_projects/assign_2_board/assign_2_board.srcs/constrs_1/imports/Provided code/practicaldff.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental F:/vivado_projects/assign_2_board/assign_2_board.srcs/utils_1/imports/synth_1/sequencer.dcp
+read_checkpoint -auto_incremental -incremental C:/vivado_projects/assign_2_board/assign_2_board.srcs/utils_1/imports/synth_1/sequencer.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

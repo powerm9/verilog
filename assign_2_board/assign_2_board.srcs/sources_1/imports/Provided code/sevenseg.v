@@ -1,7 +1,7 @@
 module seven_segment_controller(
     input clk, // 100 Mhz clock source on Basys 3 FPGA
     input reset, // reset
-    input [7:0]temp,
+    input [15:0]count,
     output reg [3:0] anode_select, // select one of the 4 7-segment modules by choosing one to be activated - note that this is an active low signal
     output reg [6:0] LED_out// cathode patterns of the 7-segment LED display
     );
@@ -32,22 +32,22 @@ begin
     2'b00: begin
         anode_select = 4'b0111; 
         // Display hundreds place
-        LED_BCD = temp[7:6];
+        LED_BCD = count/1000;
     end
     2'b01: begin
         anode_select = 4'b1011; 
         // Display tens place
-        LED_BCD = temp[5:4];
+        LED_BCD = (count % 100) /100;
     end
     2'b10: begin
         anode_select = 4'b1101; 
         // Display ones place
-        LED_BCD = temp[3:0];
+        LED_BCD = ((count % 1000)%100)/10;
     end
     2'b11: begin
         anode_select = 4'b1110; 
         // Deactivate all LEDs
-        LED_BCD = 4'b0000;
+        LED_BCD = ((count % 1000)%100)%10;
     end
     endcase
 end

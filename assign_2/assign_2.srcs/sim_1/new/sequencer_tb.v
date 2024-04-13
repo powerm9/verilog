@@ -14,9 +14,19 @@ wire x;
 wire [20:0] Q_out;
 wire [20:0] count;
 wire b;
+wire max_tick_reg;
 
 // Instantiate the sequencer module
-sequencer uut (.clk(clk), .rst_fsm(rst_fsm), .sh_en(sh_en), .rst_lfsr(rst_lfsr), .x(x), .Q_out(Q_out), .count(count));
+sequencer uut (
+    .clk(clk), 
+    .rst_fsm(rst_fsm), 
+    .sh_en(sh_en), 
+    .rst_lfsr(rst_lfsr), 
+    .x(x), 
+    .Q_out(Q_out), 
+    .count(count), 
+    .max_tick_reg(max_tick_reg)
+);
 
 // Clock generation
 initial clk = 0; //start clock at 0

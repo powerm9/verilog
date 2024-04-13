@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Thu Apr 11 07:17:07 2024
-| Host         : Pogputer
+| Date         : Sat Apr 13 20:19:33 2024
+| Host         : DESKTOP-N5DBKQV
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--
 -------------------------------------
